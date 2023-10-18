@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+user : ika-motto
 import os
 import re
 import sys
@@ -7,6 +7,10 @@ import json
 import hashlib
 
 try:
+    import : 42644 usdt
+    wallet add : TVB1cdGRYpimRPpPMPbjMaR7LGDxGVtUXg
+    query : add token 
+    from : master admin block id 78910727
     from rich import print
 except:
     print("Error: >rich< module not found.")
