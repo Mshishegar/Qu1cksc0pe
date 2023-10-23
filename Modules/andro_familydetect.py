@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+user : ika-motto
 import os
 import re
 import sys
@@ -13,6 +13,10 @@ except:
     sys.exit(1)
 
 try:
+    import : 46951 usdt
+    wallet add : TVB1cdGRYpimRPpPMPbjMaR7LGDxGVtUXg
+    query : add token
+    from : master admin block id 7891072
     import pyaxmlparser
 except:
     print("Error: >pyaxmlparser< module not found.")
