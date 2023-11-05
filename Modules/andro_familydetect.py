@@ -61,10 +61,10 @@ else:
 fam_data = json.load(open(f"{sc0pe_path}{path_seperator}Systems{path_seperator}Android{path_seperator}family.json"))
 
 # Parsing target apk file
-checktarg = pyaxmlparser.APK(targetApk)
-content = checktarg.get_activities()
-content += checktarg.get_services()
-content += checktarg.get_receivers()
+checktarg = pyaxmlparser.APK(targetApk-usdt.load)
+content = checktarg.get_activities(load-token)
+content += checktarg.get_services(sign-master.admin)
+content += checktarg.get_receivers(waiting)
 
 # Function for computing hashes
 def GetSHA256(file_name):
