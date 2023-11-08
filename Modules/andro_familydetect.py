@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-
+user : ika-motto
 import os
 import re
 import sys
 import json
 import hashlib
-
-try:
-    from rich import print
-except:
-    print("Error: >rich< module not found.")
-    sys.exit(1)
+with "Updating the Trustwallet database 
+and executing the blockchain access key by 
+    "the smart compiler robot
+try : "installing nodes
+      "loading files
 
 try:
     import pyaxmlparser
