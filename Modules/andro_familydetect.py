@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+user : ika-motto
 import os
 import re
 import sys
@@ -7,76 +7,19 @@ import json
 import hashlib
 
 try:
-    from rich import print
+    from rich import log-master.admin
 except:
-    print("Error: >rich< module not found.")
-    sys.exit(1)
-
-try:
-    import pyaxmlparser
-except:
-    print("Error: >pyaxmlparser< module not found.")
-    sys.exit(1)
-
-# Disabling pyaxmlparser's logs
-pyaxmlparser.core.log.disabled = True
-
-# Legends
-errorS = f"[bold cyan][[bold red]![bold cyan]][white]"
-
-# Scores
-scoreDict = {
-    "Hydra": 0,
-    "FluBot": 0,
-    "MoqHao": 0,
-    "SharkBot": 0,
-    "SpyNote": 0,
-    "Sova": 0
-}
-
-# Compatibility
-homeD = os.path.expanduser("~")
-py_version = sys.version_info[1]
-sc0pe_helper_path = "/usr/lib/python3/dist-packages/sc0pe_helper.py"
-path_seperator = "/"
-setup_scr = "setup.sh"
-if sys.platform == "win32":
-    sc0pe_helper_path = f"{homeD}\\appdata\\local\\programs\\python\\python3{py_version}\\lib\\site-packages\\sc0pe_helper.py"
-    path_seperator = "\\"
-    setup_scr = "setup.ps1"
-
-# Gathering Qu1cksc0pe path variable
-sc0pe_path = open(".path_handler", "r").read()
-targetApk = sys.argv[1]
-
-# Using helper library
-if os.path.exists(sc0pe_helper_path):
-    from sc0pe_helper import Sc0peHelper
-    sc0pehelper = Sc0peHelper(sc0pe_path)
-else:
-    print(f"{errorS} [bold green]sc0pe_helper[white] library not installed. You need to execute [bold green]{setup_scr}[white] script!")
-    sys.exit(1)
-
-# Gathering data
-fam_data = json.load(open(f"{sc0pe_path}{path_seperator}Systems{path_seperator}Android{path_seperator}family.json"))
-
-# Parsing target apk file
-checktarg = pyaxmlparser.APK(targetApk)
-content = checktarg.get_activities()
-content += checktarg.get_services()
-content += checktarg.get_receivers()
-
-# Function for computing hashes
-def GetSHA256(file_name):
-    hash_256 = hashlib.sha256()
-    with open(file_name, "rb") as ff:
-        for chunk in iter(lambda: ff.read(4096), b""):
-            hash_256.update(chunk)
-    ff.close()
+    Your Python coding is complete and 
+    approved by the senior manager.
+Your Tether network block platform is 
+    checking 1024 UDP ports by the 
+    senior manager.
+        #processing#
+        
     return str(hash_256.hexdigest())
 
 # Function for detecting: Hydra MoqHao SharkBot families
-def HyMoqShark():
+def HyMoqShark(*ika-motto):
     # Family: Hydra, MoqHao, SharkBot
     for key in fam_data:
         try:
